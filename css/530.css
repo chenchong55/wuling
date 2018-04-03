@@ -1,0 +1,182 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.header {
+  background-color: #1a1b1c;
+  position: relative;
+}
+
+.header__wrap {
+	height: 50px;
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.header__nav {
+  position: absolute;
+  left: 40px;
+  height: 45px;
+  top: 50%;
+  margin-top: -10px;
+  color: #fff;
+}
+
+.header__nav-item{
+	font-size: 18px;
+	margin-left: 20px;
+}
+
+
+/*导航条动画效果*/
+.move {
+	height: 10px;  
+    width: 87px;  
+    border-top: 5px solid #fff;/*只需要将上边显示出来*/  
+    position: absolute;  
+    left: 10px;  
+    top: 30px;  
+    transition: left .3s ease-in-out 0s;/*包含四个过度属性：执行变换属性、执行时间、速率、延迟*/  
+    -webkit-transition: left .2s ease-in-out 0s;/*chrome和safari*/  
+    -moz-transition: left .2s ease-in-out 0s;/*firefox*/  
+    -o-transition: left .2s ease-in-out 0s;/*opera*/  
+}
+
+
+a:nth-child(1):hover~ .move{
+	left: 0px;
+}
+
+a:nth-child(2):hover~ .move{
+	left: 110px;
+}
+
+a:nth-child(3):hover~ .move{
+	left: 210px;
+}
+
+/*第一屏*/
+.content-1 {
+	height: 481px;
+	background-color: #000;
+	background: url(../assets/index/530/background-img.jpg) center no-repeat;
+	background-size: 1024px 481px;
+}
+
+/*screen-1 标题*/
+.content-1__heading {
+	color: #fff;
+	padding-top: 140px;
+	text-align: center;
+	font-size: 50px;
+	word-spacing: 51px;
+	letter-spacing: 3px;
+}
+
+.content-1__text {
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.content-1__text2 {
+	font-size: 15px;
+	color: #fff;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.content-2 {
+	height: 428px;
+	background-color: #fbfbfb;
+}
+
+.left_content_2 {
+	float: left;
+    width: 50%;
+}
+
+.left_content_2 > img {
+	width: 382px;
+	height: 236px;
+	margin-top: 86px;
+	margin-left: 80px;
+}
+
+.right_content_2 {
+	float: right;
+    width: 50%;
+    margin-top: 163px;
+    text-align: center;
+}
+
+.content-3 {
+	height: 837px;
+}
+
+.content-3 > img{
+	width: 1024px;
+	height: 500px;
+}
+
+.content-3-text {
+	margin-top: 100px;
+	text-align: center;
+}
+
+.content-4 {
+	width: 1024px;
+	
+}
+
+.content-4-img1 img{
+	width: 618px;
+	height: 268px;
+	clear: both;
+	margin-left: 180px;
+	
+}
+
+.content-4-text {
+	padding-top: 42px;
+	text-align: center;
+}
+
+.content-4-text h1{
+	font-size: 45px;
+}
+
+.content-4-text-price {
+	padding-top: 20px;
+	font-size: 27px;
+	height: 34px;
+	word-spacing: 33px;
+}
+
+.content-4-text-price2 {
+	padding-top: 20px;
+	font-size: 10px;
+	height: 34px;
+	word-spacing: 100px;
+}
+
+.content-4-img2 > img{
+	width: 50%;
+	margin-left: 230px;
+	margin-top: 50px;
+}
+
+.ui.center.aligned.container{
+	margin-top: 50px;
+}
+
+
+
