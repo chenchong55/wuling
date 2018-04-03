@@ -65,9 +65,9 @@ a:nth-child(3):hover~ .move{
 /*第一屏*/
 .content-1 {
 	height: 481px;
-	background-color: #000;
 	background: url(../assets/index/530/background-img.jpg) center no-repeat;
 	background-size: 1024px 481px;
+	background-size: cover;
 }
 
 /*screen-1 标题*/
@@ -122,10 +122,17 @@ a:nth-child(3):hover~ .move{
 	height: 837px;
 }
 
-.content-3 > img{
-	width: 1024px;
-	height: 500px;
+.pic_all {
+	background-size: cover;
 }
+
+
+.content-3 > img{
+	
+	height: 500px;
+	background-size: cover;
+}
+
 
 .content-3-text {
 	margin-top: 100px;
@@ -134,15 +141,15 @@ a:nth-child(3):hover~ .move{
 
 .content-4 {
 	width: 1024px;
-	
+	margin-top: 50px;
 }
 
+
 .content-4-img1 img{
-	width: 618px;
 	height: 268px;
 	clear: both;
-	margin-left: 180px;
-	
+	margin-left: 10px;
+	margin-top: 0;
 }
 
 .content-4-text {
@@ -156,21 +163,17 @@ a:nth-child(3):hover~ .move{
 
 .content-4-text-price {
 	padding-top: 20px;
-	font-size: 27px;
-	height: 34px;
 	word-spacing: 33px;
 }
 
 .content-4-text-price2 {
 	padding-top: 20px;
-	font-size: 10px;
-	height: 34px;
-	word-spacing: 100px;
+	word-spacing: 50px;
 }
 
 .content-4-img2 > img{
 	width: 50%;
-	margin-left: 230px;
+	margin-left: 180px;
 	margin-top: 50px;
 }
 
