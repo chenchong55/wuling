@@ -21,7 +21,7 @@
 	font-size: 20px;
 	color: #07111b;
 	text-indent: 60px;
-	background: url(../assets/index/logo.png) left center no-repeat;
+	background: url(../image/showcar/logo.png) left center no-repeat;
 	background-size: 50px 50px;
 	position: absolute;
 	left: 20px;
@@ -32,7 +32,7 @@
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	
+
 }
 
 .screen-1:hover{
@@ -62,7 +62,7 @@
 
 .screen-1__image_530 {
 	height: 303px;
-	background: url(../assets/index/530/510.jpg) no-repeat;
+	background: url(../image/showcar/530/510.jpg) no-repeat;
 	background-size: 700px 303.33px;
 	background-position: center;
 	margin-top: 50px;
@@ -74,12 +74,8 @@
 
 .screen-1__image_510 {
 	height: 303px;
-	background: url(../assets/index/510/510.jpg) no-repeat;
+	background: url(../image/showcar/510/510.jpg) no-repeat;
 	background-size: 700px 303.33px;
 	background-position: center;
 	margin-top: 50px;
 }
-
-
-
-
