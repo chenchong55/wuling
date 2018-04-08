@@ -13760,8 +13760,9 @@ img.ui.bordered.image {
 .ui.fluid.image img {
   display: block;
   width: 100%;
-  height: auto;
+   height: auto;
 }
+
 
 /*--------------
      Avatar
