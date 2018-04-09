@@ -1,0 +1,63 @@
+{
+	margin: 0;
+	padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.header {
+  background-color: #1a1b1c;
+  position: relative;
+}
+
+.header__wrap {
+	height: 50px;
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.header__nav {
+  position: absolute;
+  left: 40px;
+  height: 45px;
+  top: 50%;
+  margin-top: -10px;
+  color: #fff;
+}
+
+.header__nav-item{
+	font-size: 18px;
+	margin-left: 20px;
+}
+
+
+/*导航条动画效果*/
+.move {
+	height: 10px;
+    width: 87px;
+    border-top: 5px solid #fff;/*只需要将上边显示出来*/
+    position: absolute;
+    left: 110px;
+    top: 30px;
+    transition: left .3s ease-in-out 0s;/*包含四个过度属性：执行变换属性、执行时间、速率、延迟*/
+    -webkit-transition: left .2s ease-in-out 0s;/*chrome和safari*/
+    -moz-transition: left .2s ease-in-out 0s;/*firefox*/
+    -o-transition: left .2s ease-in-out 0s;/*opera*/
+}
+
+
+a:nth-child(1):hover~ .move{
+	left: 0px;
+}
+
+a:nth-child(2):hover~ .move{
+	left: 110px;
+}
+
+a:nth-child(3):hover~ .move{
+	left: 210px;
+}
