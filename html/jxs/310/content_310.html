@@ -8,7 +8,25 @@
 
 	<link rel="stylesheet" type="text/css" href="../../../css/semantic.css" />
 	<link rel="stylesheet" type="text/css" href="../../../css/310.css" />
-	<script src="image/js/jquery.min.css"></script>
+	<script src="../../../image/js/jquery.min.js"></script>
+
+	<script type="text/javascript">
+	function jinshuhong_change(){
+		$(".colorPic").attr("src","../../../image/showcar/310/body/jingshuhong.jpg");
+	}
+	function zhaoxiahong_change(){
+		$(".colorPic").attr("src","../../../image/showcar/310/body/zhaoxiahong.jpg");
+	}
+	function shanjingcheng_change(){
+		$(".colorPic").attr("src","../../../image/showcar/310/body/shanjingcheng.jpg");
+	}
+	function tangguobai_change(){
+		$(".colorPic").attr("src","../../../image/showcar/310/body/tangguobai.jpg");
+	}
+	function bihailan_change(){
+		$(".colorPic").attr("src","../../../image/showcar/310/body/bihailan.jpg");
+	}
+	</script>
 </head>
 
 <body>
@@ -64,17 +82,17 @@
 
 			<div class="ui vertical segment">
 				<img class="ui fluid image" src="../../../image/showcar/310/content/sy03.png" alt="pic_03" />
-				<div class="ui center aligned container">
+				<div class="ui center aligned container ">
 					<h1>空间好用</h1>
 					<h3>无所不容的超大空间，把乐趣最大化。享受家，不等待</h3>
 				</div>
 			</div>
 
-			<div class="ui vertical segment">
+			<div class="ui vertical segment gd560" >
 
-				<img class="ui center fluid image" src="../../../image/showcar/310/pic_kv_310.jpg" alt="jingshuhong" />
+				<img class="ui center fluid image colorPic" src="../../../image/showcar/310/body/zhaoxiahong.jpg" alt="jingshuhong" />
 
-				<div class="ui center aligned container">
+				<div class="ui center aligned container gd560">
 					<h1>宝骏310</h1>
 					<!-- <div class="content-4-text-price"> -->
 					<h3>¥5.18万起 / 5.9L / 自然吸气发动机</h3>
@@ -82,7 +100,32 @@
 					<!-- <div class="content-4-text-price2"> -->
 					<h5>官方指导价  /  油耗/百公里 /  发动机</h5>
 					<!-- </div> -->
-					<img class="ui fluid image" src="../../../image/showcar/530/car-color.png" style="width: 100%;margin-top: 20px;" alt="car-color" />
+					<!-- <img class="ui fluid image" src="../../../image/showcar/530/car-color.png" style="width: 100%;margin-top: 20px;" alt="car-color" /> -->
+					<div class="color_button">
+						<ul>
+						<li>
+							<img src="../../../image/showcar/310/body/icon_jinshuhong.png" alt="宝骏560 DCT自动挡/7座版 金属红" onclick="jinshuhong_change()">
+							<div class="txt" style="margin-left:-18px;">金属红</div>
+						</li>
+						<li>
+							<img src="../../../image/showcar/310/body/icon_zhaoxiahong.png" alt="宝骏560 DCT自动挡/7座版 朝霞红" onclick="zhaoxiahong_change()">
+							<div class="txt" style="margin-left:-18px;">朝霞红</div>
+						</li>
+						<li>
+							<img src="../../../image/showcar/310/body/icon_shanjingcheng.png" alt="宝骏560 DCT自动挡/7座版 闪晶橙" onclick="shanjingcheng_change()">
+							<div class="txt" style="margin-left:-18px;">闪晶橙</div>
+						</li>
+						<li>
+							<img src="../../../image/showcar/310/body/icon_tangguobai.png" alt="宝骏560 DCT自动挡/7座版 糖果白" onclick="tangguobai_change()">
+							<div class="txt" style="margin-left:-18px;">糖果白</div>
+						</li>
+						<li>
+							<img src="../../../image/showcar/310/body/icon_bihailan.png" alt="宝骏560 DCT自动挡/7座版 碧海蓝" onclick="bihailan_change()">
+							<div class="txt" style="margin-left:-18px;">碧海蓝</div>
+						</li>
+
+					</ul>
+				</div>
 					<a class="ui secondary huge	button" style="margin-bottom:30px;margin-top: 50px;" onclick="javascrtpt:window.location.href='./content_530_cs.html'">配置详情</a>
 				</div>
 			</div>
