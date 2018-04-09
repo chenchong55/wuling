@@ -180,3 +180,38 @@ a:nth-child(3):hover~ .move{
 .ui.center.aligned.container{
 	margin-top: 50px;
 }
+
+/*色彩变换*/
+.gdColor ul{
+	display: inline-block;
+	left: 50%;
+	font-size: 0;
+	vertical-align: middle;
+	text-align: center;
+	margin-right: -0.25em;
+}
+
+.gdColor ul li{
+	cursor: pointer;
+  position: relative;
+  display: inline;
+  height: 35px;
+	line-height:20px;
+  margin: 0 12px 5px 0px;
+}
+
+.gdColor img{
+	width: 50px;
+	left: 50%;
+}
+
+.gdColor .txt {
+	position: absolute;
+  top: 5px;
+  left: 50%;
+  color: #999;
+  font-size: 12px;
+	text-align: center;
+  word-break: keep-all;
+  white-space: nowrap;
+}
