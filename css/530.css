@@ -119,27 +119,31 @@
 }
 
 /*色彩变换*/
+
+ul li {
+	margin: 0;
+	padding: 0;
+}
 .gdColor ul{
-	display: inline-block;
-	left: 50%;
+	display: block;
 	font-size: 0;
-	vertical-align: middle;
-	text-align: center;
-	margin-right: -0.25em;
+}
+
+.imageColor{
+	margin: 5px auto 1px auto;
 }
 
 .gdColor ul li{
-	cursor: pointer;
   position: relative;
   display: inline;
+	width: 30px;
   height: 35px;
-	line-height:20px;
-  margin: 0 12px 5px 0px;
+
+  margin: 0 12px 5px 5px;
 }
 
 .gdColor img{
-	width: 35px;
-	left: 50%;
+	width: 30px;
 }
 
 .gdColor .txt {

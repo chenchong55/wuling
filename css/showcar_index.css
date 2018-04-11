@@ -29,10 +29,8 @@
 
 /*第一屏*/
 .screen-1 {
-	height: 100%;
 	margin: 0;
 	padding: 0;
-
 }
 
 .screen-1:hover{
@@ -42,7 +40,6 @@
 .screen-1__heading {
 	font-size: 40px;
 	text-align: center;
-	padding-top: 50px;
 }
 
 .screen-1__heading:hover{

@@ -1,4 +1,12 @@
 
+/*第一屏*/
+.content-1 {
+	height: 481px;
+	background: url(../../image/showcar/hongguang/s1/banner_.jpg) center no-repeat;
+	background-size: 1024px 481px;
+	background-size: cover;
+}
+
 /*screen-1 标题*/
 .content-1__heading {
 	color: #fff;
@@ -57,6 +65,7 @@
 
 
 .content-3 > img{
+
 	height: 500px;
 	background-size: cover;
 }
@@ -109,24 +118,77 @@
 	margin-top: 50px;
 }
 
-/*3*/
 /*色彩变换*/
-.gd560 ul{
-	display: block;
-	margin 0 auto;
+.gdColor ul{
+	display: inline-block;
+	left: 30%;
+
 	font-size: 0;
-	padding-left:0px;
-}
-.gd560 img{
-	width: 35px;
+	vertical-align: middle;
+	text-align: center;
+	margin-right: -0.25em;
 }
 
-.gd560 .txt {
+.gdColor ul li{
+	cursor: pointer;
+  position: relative;
+  display: inline;
+  height: 30px;
+	line-height:10px;
+  margin: 0 12px 5px 0px;
+}
+
+.gdColor img{
+	width: 10px;
+	left: 30%;
+}
+
+.gdColor .txt {
 	position: absolute;
   top: 5px;
   left: 50%;
   color: #999;
   font-size: 12px;
+	text-align: center;
   word-break: keep-all;
   white-space: nowrap;
+}
+
+.colorchange ul{
+	display: inline-block;
+	left: 10%;
+	width: 600px;
+	font-size: 0;
+	vertical-align: middle;
+	margin-left: 0px;
+}
+
+.colorchange ul li{
+	cursor: pointer;
+  position: relative;
+  display: inline;
+  height: 15px;
+	line-height:10px;
+  margin: 0 12px 5px 0px;
+}
+
+.colorchange img{
+	width: 35px;
+	left: 10%;
+}
+
+.colorchange .txt {
+	position: absolute;
+  top: 5px;
+  left: 50%;
+  color: #999;
+  font-size: 12px;
+	text-align: center;
+  word-break: keep-all;
+  white-space: nowrap;
+}
+
+.imgwidth > img{
+	margin-left: 4em;
+	padding-top: 1em;
 }
