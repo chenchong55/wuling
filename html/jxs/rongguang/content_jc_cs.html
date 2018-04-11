@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name=viewport content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
+	<title>荣光加长版具体配置</title>
+	<link rel="stylesheet" type="text/css" href="../../../css/semantic.css" />
+	<link rel="stylesheet" type="text/css" href="../../../css/310_cs.css" />
+	<link rel="stylesheet" href="../../../css/fixed-table.css" />
+	<!-- 必须引入的css -->
+	<script src="../../../image/js/jquery.min.js"></script>
+	<script src="../../../image/js/semantic.min.js"></script>
+	<script src="../../../image/js/jquery.address.js"></script>
+
+	<style>
+		.fixed-table-box {
+			width: 800px;
+			margin: 50px auto;
+		}
+
+		.fixed-table_body-wraper {
+			/* height: 260px; */
+		}
+
+		.fixed-table-box>.fixed-table_body-wraper {
+			/*内容了表格主体内容有纵向滚动条*/
+			max-height: 260px;
+		}
+
+		.fixed-table_fixed>.fixed-table_body-wraper {
+			/*为了让两侧固定列能够同步表格主体内容滚动*/
+			max-height: 240px;
+		}
+
+		.w-150 {
+			width: 150px;
+		}
+
+		.w-120 {
+			width: 120px;
+		}
+
+		.w-300 {
+			width: 300px;
+		}
+
+		.w-100 {
+			width: 100px;
+		}
+	</style>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__wrap">
+			<nav class="header__nav">
+
+				<a href="../showcar.html" target="_parent" class="header__nav-item">车型选择</a>
+				<a href="./content_s.html" target="_parent" class="header__nav-item">车型概况</a>
+				<a href="./content_jc_cs.html" target="_parent" class="header__nav-item">配置参数</a>
+
+				<!-- <a href="#" class="header__nav-item">用户评价</a> -->
+				<a class="move"></a>
+			</nav>
+		</div>
+	</header>
+
+	<div class="ui vertical segment" style="padding-top: 0px;">
+		<img class="ui fluid image" src="../../../image/showcar/rongguang/content/jc/content01.png" alt="310" />
+	</div>
+
+	<div class="ui vertical segment" style="padding-top: 0px;">
+		<img class="ui center fluid image" src="../../../image/showcar/rongguang/content/jc/jc01.jpg" alt="v" />
+	</div>
+
+	<script type="text/javascript">
+		$('.menu .item').tab();
+	</script>
+</body>
+
+</html>

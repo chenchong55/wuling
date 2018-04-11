@@ -1,0 +1,17 @@
+/*第一屏*/
+.content-1 {
+	height: 481px;
+	background: url(../../image/showcar/rongguang/content/6.jpg) center no-repeat;
+	background-size: 1024px 481px;
+	background-size: cover;
+}
+
+.gd560 ul li{
+	cursor: pointer;
+  position: relative;
+  display: inline;
+  width: 35px;
+  height: 35px;
+	line-height:20px;
+  margin: 0 12px 5px 0px;
+}
