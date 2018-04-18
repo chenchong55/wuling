@@ -1,3 +1,5 @@
+html,body{overflow-x:hidden;}
+
 *{
 	margin: 0;
 	padding: 0;
@@ -48,7 +50,7 @@
 }
 
 .screen-1__text {
-	font-size: 30px;
+	font-size: 20px;
 	text-align: center;
 	padding-top: 46px;
 }
