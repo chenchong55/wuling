@@ -17,3 +17,11 @@
 	line-height:20px;
   margin: 0 5px 5px 0px;
 }
+.header_right {
+  position: absolute;
+  right: 40px;
+  height: 33px;
+  top: 20%;
+  margin-top: -10px;
+  color: #fff;
+}

@@ -46,7 +46,14 @@
     margin-top: 163px;
     text-align: center;
 }
-
+.header_right {
+  position: absolute;
+  right: 40px;
+  height: 33px;
+  top: 20%;
+  margin-top: -10px;
+  color: #fff;
+}
 .content-3 {
 	height: 837px;
 }

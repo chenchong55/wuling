@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
@@ -11,8 +11,8 @@
 	<link rel="stylesheet" type="text/css" href="../../../css/510_cs.css" />
 	<link rel="stylesheet" href="../../../css/fixed-table.css" />
 	<!-- 必须引入的css -->
+    <script src="../../../image/js/jquery.min.js"></script>
 	<script src="../../../image/js/semantic.min.js"></script>
-	<script src="../../../image/js/jquery.min.css"></script>
 	<style>
 		.fixed-table-box {
 			width: 800px;
@@ -55,13 +55,18 @@
 <body>
 	<header class="header">
 		<div class="header__wrap">
+				<i class="share icon" style="color:white;margin-top:30px;margin-left:20px;" onclick="api.closeWin();"></i>
 			<nav class="header__nav">
-				<a href="../showcar.html" target="_parent" class="header__nav-item">车型选择</a>
+
 				<a href="./content_510.html" target="_parent" class="header__nav-item">车型概况</a>
 				<a href="./content_510_cs.html" target="_parent" class="header__nav-item">配置参数</a>
 				<!-- <a href="#" class="header__nav-item">用户评价</a> -->
+
 				<a class="move"></a>
 			</nav>
+			<button class="ui blue button" style="margin-left:200px;" onclick="api.openWin({ 'name': 'jxs_a_gcjs_main_win', 'url': 'widget://html/jxs/a_gcjs_main_win.html' });">
+				<i class="table icon"></i>购车计算
+			</button>
 		</div>
 	</header>
 
@@ -72,7 +77,7 @@
 
 
 	<div class="ui container">
-		<center><img class="ui fluid image" src="../../../image/showcar/510/510-main-cs.png" style="width: 2400px;overflow:auto;" alt="530cs_logo" /></center>
+		<center><img class="ui fluid image" src="../../../image/showcar/510/510-main-cs.png" style="width: 2400px;overflow:auto;" alt="530cs_logo" onclick="openImage(0)"/></center>
 	</div>
 
 
@@ -99,7 +104,19 @@
 			<h3>科技装备持身，空间“大”有讲究，在拒绝乏味的道路上，510用更人性化的功能，让安全如影随行，容纳旅途更多。</h3>
 		</div>
 	</div>
+	<script src="../../../image/js/openImage.js"></script>
+		<script type="text/javascript">
 
+			var pathName = window.location.href.split("html/")[0];
+
+			url1 = "image/showcar/510/510-main-cs.png";
+			// url2 = "image/showcar/310/cs/310b.jpg";
+			// url3 = "image/showcar/310/cs/310c.jpg";
+			 imgPathArray.push(pathName+url1);
+			 // imgPathArray.push(pathName+url2);
+			 // imgPathArray.push(pathName+url3);
+
+		</script>
 </body>
 
 </html>

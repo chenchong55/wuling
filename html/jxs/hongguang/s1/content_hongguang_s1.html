@@ -36,13 +36,17 @@
 <body>
 	<header class="header">
 		<div class="header__wrap">
+				<i class="share icon" style="color:white;margin-top:30px;margin-left:20px;" onclick="api.closeWin();"></i>
 			<nav class="header__nav">
-				<a href="../../showcar.html" target="_parent" class="header__nav-item">车型选择</a>
+				<!-- <a href="../../showcar.html" target="_parent" class="header__nav-item">车型选择</a> -->
 				<a href="./content_hongguang_s1.html" target="_parent" class="header__nav-item">车型概况</a>
 				<a href="./content_hongguang_s1_cs.html" target="_parent" class="header__nav-item">配置参数</a>
 				<!-- <a href="#" class="header__nav-item">用户评价</a> -->
 				<a class="move"></a>
 			</nav>
+			<button class="ui blue button" style="margin-left:200px;" onclick="api.openWin({ 'name': 'jxs_a_gcjs_main_win', 'url': 'widget://html/jxs/a_gcjs_main_win.html' });">
+				<i class="table icon"></i>购车计算
+			</button>
 		</div>
 	</header>
 
@@ -50,7 +54,7 @@
 		<h2 class="content-1__heading"><b>五菱宏光S1</b></h2>
 		<!-- <div class="content-1__text">在一起的幸福</div> -->
 		<!-- <div class="content-1__text2">以澎湃之心，纵容每一颗驰骋的心</div> -->
-		<center><button class="ui huge primary button" style="margin-top:50px;" onclick="javascrtpt:window.location.href='./content_hongguang_s3_cs.html'">了解详情</button></center>
+		<!-- <center><button class="ui huge primary button" style="margin-top:50px;" onclick="javascrtpt:window.location.href='./content_hongguang_s3_cs.html'">了解详情</button></center> -->
 	</div>
 
 	<div class="ui vertical segment">

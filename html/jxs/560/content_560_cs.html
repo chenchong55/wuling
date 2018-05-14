@@ -55,15 +55,17 @@
 <body>
 	<header class="header">
 		<div class="header__wrap">
+				<i class="share icon" style="color:white;margin-top:30px;margin-left:20px;" onclick="api.closeWin();"></i>
 			<nav class="header__nav">
-
-				<a href="../showcar.html" target="_parent" class="header__nav-item">车型选择</a>
 				<a href="./content_560.html" target="_parent" class="header__nav-item">车型概况</a>
 				<a href="./content_560_cs.html" target="_parent" class="header__nav-item">配置参数</a>
 
 				<!-- <a href="#" class="header__nav-item">用户评价</a> -->
 				<a class="move"></a>
 			</nav>
+			<button class="ui blue button" style="margin-left:200px;" onclick="api.openWin({ 'name': 'jxs_a_gcjs_main_win', 'url': 'widget://html/jxs/a_gcjs_main_win.html' });">
+				<i class="table icon"></i>购车计算
+			</button>
 		</div>
 	</header>
 
@@ -72,32 +74,45 @@
 	</div>
 
 	<div class="ui top attached tabular menu">
-		<a href="" class="item" data-tab="tab560DCT">宝骏560-DCT自动挡 参数配置表</a>
-		<a href="" class="item" data-tab="tab560QZ">宝骏560七座车 参数配置表</a>
-		<a href="" class="item" data-tab="tab560IAMT">宝骏560iAMT自动挡 参数配置表</a>
-		<a href="" class="item" data-tab="tab560LD">宝骏560律动版 参数配置表</a>
+		<a href="" class="item" data-tab="tab560DCT">宝骏560-DCT自动挡</a>
+		<a href="" class="item" data-tab="tab560QZ">宝骏560七座车</a>
+		<a href="" class="item" data-tab="tab560IAMT">宝骏560iAMT自动挡</a>
+		<a href="" class="item" data-tab="tab560LD">宝骏560律动版</a>
 	</div>
 	<div class="ui bottom attached tab segment" data-tab="tab560DCT">
-		<img class="ui fluid image" src="../../../image/showcar/560/cs/560_01.jpg" style="width: 2400px;overflow:auto;left:0;" alt="560DCT" />
+		<img class="ui fluid image" src="../../../image/showcar/560/cs/560_01.jpg" style="width: 2400px;overflow:auto;left:0;" alt="560DCT"  onclick="openImage(0)"/>
 	</div>
 	<div class="ui bottom attached tab segment" data-tab="tab560QZ">
-		<img class="ui fluid image" src="../../../image/showcar/560/cs/560_02.jpg" style="width: 2400px;overflow:auto;left:0;" alt="560QZ" />
+		<img class="ui fluid image" src="../../../image/showcar/560/cs/560_02.jpg" style="width: 2400px;overflow:auto;left:0;" alt="560QZ"  onclick="openImage(1)"/>
 	</div>
 	<div class="ui bottom attached tab segment" data-tab="tab560IAMT">
-		<img class="ui fluid image" src="../../../image/showcar/560/cs/560_03.jpg" style="width: 2400px;overflow:auto;left:0;" alt="560IAMT" />
+		<img class="ui fluid image" src="../../../image/showcar/560/cs/560_03.jpg" style="width: 2400px;overflow:auto;left:0;" alt="560IAMT"  onclick="openImage(2)"/>
 	</div>
 	<div class="ui bottom attached tab segment" data-tab="tab560LD">
-		<img class="ui fluid image" src="../../../image/showcar/560/cs/560_04.jpg" style="width: 2400px;overflow:auto;left:0;" alt="560LD" />
+		<img class="ui fluid image" src="../../../image/showcar/560/cs/560_04.jpg" style="width: 2400px;overflow:auto;left:0;" alt="560LD"  onclick="openImage(3)"/>
 	</div>
 
 	<div class="ui center aligned container">
 		<img class="ui center fluid image" src="../../../image/showcar/560/pic_02.png" style="margin-top:50px;" alt="cs_show2" />
 	</div>
 
-	<script type="text/javascript">
-		//demo 是自定义的类选择器名称
-		$('.menu .item').tab();
-	</script>
+	<script src="../../../image/js/openImage.js"></script>
+		<script type="text/javascript">
+			//demo 是自定义的类选择器名称
+			$('.menu .item').tab();
+
+			var pathName = window.location.href.split("html/")[0];
+
+			url1 = "image/showcar/560/cs/560_01.jpg";
+			url2 = "image/showcar/560/cs/560_02.jpg";
+			url3 = "image/showcar/560/cs/560_03.jpg";
+			url4 = "image/showcar/560/cs/560_04.jpg";
+			 imgPathArray.push(pathName+url1);
+			 imgPathArray.push(pathName+url2);
+			 imgPathArray.push(pathName+url3);
+			 imgPathArray.push(pathName+url4);
+
+		</script>
 </body>
 
 </html>

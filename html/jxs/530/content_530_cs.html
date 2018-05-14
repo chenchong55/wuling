@@ -52,13 +52,17 @@
 <body>
 	<header class="header">
 		<div class="header__wrap">
+				<i class="share icon" style="color:white;margin-top:30px;margin-left:20px;" onclick="api.closeWin();"></i>
 			<nav class="header__nav">
-				<a href="../showcar.html" target="_parent" class="header__nav-item">车型选择</a>
+				<!-- <a href="../showcar.html" target="_parent" class="header__nav-item">车型选择</a> -->
 				<a href="./content_530.html" target="_parent" class="header__nav-item">车型概况</a>
 				<a href="./content_530_cs.html" target="_parent" class="header__nav-item">配置参数</a>
 				<!-- <a href="#" class="header__nav-item">用户评价</a> -->
 				<a class="move"></a>
 			</nav>
+			<button class="ui blue button" style="margin-left:200px;" onclick="api.openWin({ 'name': 'jxs_a_gcjs_main_win', 'url': 'widget://html/jxs/a_gcjs_main_win.html' });">
+				<i class="table icon"></i>购车计算
+			</button>
 		</div>
 	</header>
 
@@ -70,7 +74,7 @@
 		<h3>详细参数表</h3>
 	</center>
 	<div class="ui container">
-		<center><img class="ui fluid image" src="../../../image/showcar/530/530-main-cs.jpg" style="width: 2400px;overflow:auto;" alt="530cs_logo" /></center>
+		<center><img class="ui fluid image" src="../../../image/showcar/530/530-main-cs.jpg" style="width: 2400px;overflow:auto;" alt="530cs_logo" onclick="openImage(0)"/></center>
 	</div>
 
 	<div class="ui center aligned container">
@@ -93,5 +97,18 @@
 		<img class="ui center fluid image" src="../../../image/showcar/530/cs/cs_show4.jpg" style="margin-top:50px;" alt="cs_show4" />
 	</div>
 </body>
+<script src="../../../image/js/openImage.js"></script>
+	<script type="text/javascript">
 
+
+		var pathName = window.location.href.split("html/")[0];
+
+		url1 = "image/showcar/530/530-main-cs.jpg";
+		// url2 = "image/showcar/310/cs/310b.jpg";
+		// url3 = "image/showcar/310/cs/310c.jpg";
+		 imgPathArray.push(pathName+url1);
+		 // imgPathArray.push(pathName+url2);
+		 // imgPathArray.push(pathName+url3);
+
+	</script>
 </html>
